@@ -7,7 +7,7 @@ public class Main
     {
         ParametersBag bag = new ParametersBag(args);
 
-        String folderPath = bag.getPaths();
+        String folderPath = bag.getPath();
         long sizeLimit = bag.getLimit();
         File file = new File(folderPath);
         Node root = new Node(file, sizeLimit);
